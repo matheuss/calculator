@@ -9,6 +9,7 @@
 
 void clear_screen();
 float sum(float, float);
+float sub(float, float);
 
 int main() {
     clear_screen();
@@ -27,4 +28,8 @@ void clear_screen() {
 
 float sum(float x, float y) {
     return x + y;
+}
+
+float sub(float x, float y) {
+    return x - y;
 }
