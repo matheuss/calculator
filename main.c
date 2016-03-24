@@ -78,6 +78,18 @@ int main() {
             printf("%.2f * %.2f = %.2f", x, y, mul(x, y));
             break;
         }
+
+        case 5: {
+            int x;
+            int y;
+
+            printf("Digite um número inteiro: ");
+            scanf("%d", &x);
+            printf("Digite outro número inteiro: ");
+            scanf("%d", &y);
+            printf("%d %% %d = %d", x, y, mod(x, y));
+            break;
+        }
     }    
 
     printf("\n");
