@@ -16,6 +16,7 @@ float mod(float, float);
 float bmi(float, float);
 char ethanol_or_gasoline(float, float);
 char even_or_odd(int);
+int factorial(int);
 
 int main() {
     clear_screen();
@@ -62,4 +63,11 @@ char ethanol_or_gasoline(float ethanolPrice, float gasolinePrice) {
 
 char even_or_odd(int x) {
     return x % 2 ? 'o' : 'e';
+}
+
+int factorial(int n) {
+    if(n == 0) {
+        return 1;
+    }
+    return n * factorial(n - 1);
 }
