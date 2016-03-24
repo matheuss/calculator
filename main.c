@@ -17,10 +17,23 @@ float bmi(float, float);
 char ethanol_or_gasoline(float, float);
 char even_or_odd(int);
 int factorial(int);
+void print_menu();
 
 int main() {
+    int option;
+
     clear_screen();
 
+    print_menu();
+    printf("Digite o código da operação desejada: (1-9) ");
+    scanf("%d", &option);
+
+    while (option < 1 || option > 9) {
+        printf("Opção inválida. Digite um número que pertença ao intervalo [1,9]: ");
+        scanf("%d", &option);
+    }
+
+    printf("\n");
     return 0;
 }
 
@@ -70,4 +83,17 @@ int factorial(int n) {
         return 1;
     }
     return n * factorial(n - 1);
+}
+
+void print_menu() {
+    printf("Operações disponíveis:\n");
+    printf("(1) Soma de dois números reais\n");
+    printf("(2) Subtração de dois números reais\n");
+    printf("(3) Divisão de dois números reais\n");
+    printf("(4) Multiplicação de dois números reais\n");
+    printf("(5) Resto da divisão de dois números inteiros\n");
+    printf("(6) Cálculo do Indice de Massa Corporal\n");
+    printf("(7) Decisão de qual combustivel eh mais vantajoso (alcool ou gasolina)\n");
+    printf("(8) Determinação da paridade de um número inteiro\n");
+    printf("(9) Cálculo do fatorial para um número inteiro\n");
 }
