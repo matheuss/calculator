@@ -90,6 +90,18 @@ int main() {
             printf("%d %% %d = %d", x, y, mod(x, y));
             break;
         }
+
+        case 6: {
+            float weight;
+            float height;
+
+            printf("Digite o peso em kg (número real): ");
+            scanf("%f", &weight);
+            printf("Digite a altura em metros (número real: ");
+            scanf("%f", &height);
+            printf("IMC = %f", bmi(weight, height));
+            break;
+        }
     }    
 
     printf("\n");
