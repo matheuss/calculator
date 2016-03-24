@@ -12,7 +12,7 @@ float sum(float, float);
 float sub(float, float);
 float _div(float, float);
 float mul(float, float);
-float mod(float, float);
+int mod(int, int);
 float bmi(float, float);
 char ethanol_or_gasoline(float, float);
 char even_or_odd(int);
@@ -49,8 +49,8 @@ float mul(float x, float y) {
     return x * y;
 }
 
-float mod(float x, float y) {
-    return (int) x % (int) y;
+int mod(int x, int y) {
+    return x %  y;
 }
 
 float bmi(float weight, float height) { // Body Mass Index
