@@ -13,6 +13,7 @@ float sub(float, float);
 float _div(float, float);
 float mul(float, float);
 float mod(float, float);
+float bmi(float, float);
 
 int main() {
     clear_screen();
@@ -47,4 +48,8 @@ float mul(float x, float y) {
 
 float mod(float x, float y) {
     return (int) x % (int) y;
+}
+
+float bmi(float weight, float height) { // Body Mass Index
+    return weight / (height * height);
 }
