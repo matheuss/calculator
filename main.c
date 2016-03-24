@@ -66,6 +66,18 @@ int main() {
             printf("%.2f / %.2f = %.2f", x, y, _div(x, y));
             break;
         }
+
+        case 4: {
+            float x;
+            float y;
+
+            printf("Digite um número real: ");
+            scanf("%f", &x);
+            printf("Digite outro número real: ");
+            scanf("%f", &y);
+            printf("%.2f * %.2f = %.2f", x, y, mul(x, y));
+            break;
+        }
     }    
 
     printf("\n");
