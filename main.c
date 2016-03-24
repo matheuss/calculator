@@ -15,6 +15,7 @@ float mul(float, float);
 float mod(float, float);
 float bmi(float, float);
 char ethanol_or_gasoline(float, float);
+char even_or_odd(int);
 
 int main() {
     clear_screen();
@@ -57,4 +58,8 @@ float bmi(float weight, float height) { // Body Mass Index
 
 char ethanol_or_gasoline(float ethanolPrice, float gasolinePrice) {
     return (ethanolPrice / gasolinePrice) > 0.7? 'g': 'e';
+}
+
+char even_or_odd(int x) {
+    return x % 2 ? 'o' : 'e';
 }
