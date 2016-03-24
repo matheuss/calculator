@@ -14,6 +14,7 @@ float _div(float, float);
 float mul(float, float);
 float mod(float, float);
 float bmi(float, float);
+char ethanol_or_gasoline(float, float);
 
 int main() {
     clear_screen();
@@ -52,4 +53,8 @@ float mod(float x, float y) {
 
 float bmi(float weight, float height) { // Body Mass Index
     return weight / (height * height);
+}
+
+char ethanol_or_gasoline(float ethanolPrice, float gasolinePrice) {
+    return (ethanolPrice / gasolinePrice) > 0.7? 'g': 'e';
 }
