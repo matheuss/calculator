@@ -102,6 +102,22 @@ int main() {
             printf("IMC = %f", bmi(weight, height));
             break;
         }
+
+        case 7: {
+            float ethanolPrice;
+            float gasolinePrice;
+
+            printf("Digite o preço do alcool em reais (número real): ");
+            scanf("%f", &ethanolPrice);
+            printf("Digite o preço da gasolina em reais (número real): ");
+            scanf("%f", &gasolinePrice);
+            if (ethanol_or_gasoline(ethanolPrice, gasolinePrice) == 'e') {
+                printf("Vale mais a pena abastecer com alcool!");
+            } else {
+                printf("Vale mais a pena abastecer com gasolina!");
+            }
+            break;
+        }
     }    
 
     printf("\n");
