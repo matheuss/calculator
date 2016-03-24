@@ -12,6 +12,7 @@ float sum(float, float);
 float sub(float, float);
 float _div(float, float);
 float mul(float, float);
+float mod(float, float);
 
 int main() {
     clear_screen();
@@ -42,4 +43,8 @@ float _div(float x, float y) { // 'div' was not used as name due to conflict wit
 
 float mul(float x, float y) {
     return x * y;
+}
+
+float mod(float x, float y) {
+    return (int) x % (int) y;
 }
