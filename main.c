@@ -8,10 +8,10 @@
 #endif
 
 void clear_screen();
+float sum(float, float);
 
 int main() {
     clear_screen();
-
     
     return 0;
 }
@@ -23,4 +23,8 @@ void clear_screen() {
     } else if(SYS == "unix") {
         system("clear");
     }
+}
+
+float sum(float x, float y) {
+    return x + y;
 }
