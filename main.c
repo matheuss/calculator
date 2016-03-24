@@ -33,6 +33,19 @@ int main() {
         scanf("%d", &option);
     }
 
+    switch(option) {
+        case 1: {
+            float x;
+            float y;
+            printf("Digite um número real: ");
+            scanf("%f", &x);
+            printf("Digite outro número real: ");
+            scanf("%f", &y);
+            printf("%.2f + %.2f = %.2f", x, y, sum(x, y));
+            break;
+        }
+    }    
+
     printf("\n");
     return 0;
 }
