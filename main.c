@@ -7,6 +7,20 @@
 #define SYS "unix"
 #endif
 
+void clear_screen();
+
 int main() {
+    clear_screen();
+
+    
     return 0;
+}
+
+void clear_screen() {
+    printf("\n");
+    if(SYS == "win") {
+        system("cls");
+    } else if(SYS == "unix") {
+        system("clear");
+    }
 }
