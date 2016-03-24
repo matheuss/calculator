@@ -54,7 +54,17 @@ int main() {
             scanf("%f", &y);
             printf("%.2f - %.2f = %.2f", x, y, sub(x, y));
             break;
+        }
+        case 3: {
+            float x;
+            float y;
 
+            printf("Digite um número real: ");
+            scanf("%f", &x);
+            printf("Digite outro número real: ");
+            scanf("%f", &y);
+            printf("%.2f / %.2f = %.2f", x, y, _div(x, y));
+            break;
         }
     }    
 
