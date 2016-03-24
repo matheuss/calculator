@@ -118,6 +118,20 @@ int main() {
             }
             break;
         }
+
+        case 8: {
+            int x;
+
+            printf("Digite um número inteiro: ");
+            scanf("%d", &x);
+
+            if (even_or_odd(x) == 'e') {
+                printf("%d é par!", x);
+            } else {
+                printf("%d é impar!", x);
+            }
+            break;
+        }
     }    
 
     printf("\n");
