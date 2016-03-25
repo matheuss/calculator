@@ -132,6 +132,16 @@ int main() {
             }
             break;
         }
+
+        case 9: {
+            int x;
+
+            printf("Digite um número inteiro: ");
+            scanf("%d", &x);
+
+            printf("%d! = %d", x, factorial(x));
+            break;
+        }
     }    
 
     printf("\n");
